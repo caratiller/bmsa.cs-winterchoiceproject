@@ -48,11 +48,11 @@ class Person:
         today = datetime.date.today()
         age = today.year-self.birthdate.year
         return age
-'''image=Image.open('unnamed.jpg')
+"""image=Image.open('unnamed.jpg')
 image.thumbnail((300,300),Image.ANTIALIAS)
 photo=ImageTk.PhotoImage(image)
 label_image=tk.Label(image=photo)
-label_image.grid(column=1,row=0)'''
+label_image.grid(column=1,row=0)"""
 window.mainloop()
 
 
