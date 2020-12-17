@@ -3,7 +3,7 @@ WinterChoiceProject
 Author: Cara Tiller 
 Garrett Tiller
 """
-"""" I currently have this as a comment because it is not working. 
+# I currently have this as a comment because it is not working. 
 import datetime
 
 import tkinter as tk
@@ -31,11 +31,11 @@ dateEntry = tk.Entry()
 dateEntry.grid(column=1,row=4)
 def getInput():
     name=nameEntry.get()
-    monkey = Person(name,datetime.date(int(yearEntry.get()),int(monthEntry.get()),int(dateEntry.get())))
+    persons_name = Person(name,datetime.date(int(yearEntry.get()),int(monthEntry.get()),int(dateEntry.get())))
     
     textArea = tk.Text(master=window,height=10,width=25)
     textArea.grid(column=1,row=6)
-    answer = " Heyy {monkey}!!!. You are {age} years old!!! ".format(monkey=name, age=monkey.age())
+    answer = " Heyy {persons_name}!!!. You are {age} years old!!! ".format(persons_name=name, age=persons_name.age())
     textArea.insert(tk.END,answer)
 button=tk.Button(window,text="Calculate Age",command=getInput,bg="pink")
 button.grid(column=1,row=5)
@@ -48,11 +48,11 @@ class Person:
         today = datetime.date.today()
         age = today.year-self.birthdate.year
         return age
-image=Image.open('unnamed.jpg')
+'''image=Image.open('unnamed.jpg')
 image.thumbnail((300,300),Image.ANTIALIAS)
 photo=ImageTk.PhotoImage(image)
 label_image=tk.Label(image=photo)
-label_image.grid(column=1,row=0)
+label_image.grid(column=1,row=0)'''
 window.mainloop()
 
 
@@ -62,8 +62,8 @@ image.thumbnail((100,100),Image.ANTIALIAS)
 
 photo= ImageTk.PhotoImage(image)   
 label_image= tk.Label(image=photo)  
-label_image.grid(column=1,row=0) """
-
+label_image.grid(column=1,row=0) 
+"""
 print("EXAMPLE:\nWhat Year Where You Born? 2005 \nWhat Month Where You Born? 11 \nWhat Day Where You Born? 22 \nHow many Leap Year Have You Had In Your Lifetime? 4\nEnter The Current Year: 2020\nEnter the Current Month: 12\nEnter the Current Day: 17\nYou Have Been Alive For 5,504 Days !\nNow Enter Your Birthday !")
 
 birth_year= int(input("What Year Where You Born? "))
@@ -100,4 +100,4 @@ def month():
   elif current_month =12:
     y=334 #dec
 
-x=current_year-birth_year
+x=current_year-birth_year """
